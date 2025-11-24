@@ -71,3 +71,12 @@ export default defineConfig([
   },
 ])
 ```
+
+### deploy
+
+```
+npm install
+npm run build
+npx wrangler pages project create 3d-figure --production-branch=main
+npx wrangler pages deploy dist
+```
